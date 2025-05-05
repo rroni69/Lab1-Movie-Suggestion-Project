@@ -87,6 +87,8 @@ const SignUp = () => {
                 required
               />
               {errors.name && <div className="invalid-feedback">{errors.name}</div>}
+              <p></p>
+
             </div>
 
             <div className="form-group">
@@ -102,6 +104,7 @@ const SignUp = () => {
                 required
               />
               {errors.email && <div className="invalid-feedback">{errors.email}</div>}
+              <p></p>
             </div>
 
             <div className="form-group">
@@ -117,6 +120,8 @@ const SignUp = () => {
                 required
               />
               {errors.password && <div className="invalid-feedback">{errors.password}</div>}
+              
+
             </div>
 
             <button type="submit" className="btn btn-danger btn-block mt-3">Sign Up</button>

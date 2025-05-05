@@ -72,12 +72,13 @@ return (
               className={`form-control ${errors.email ? 'is-invalid' : ''}`}
               id="email"
               name="email"
-              placeholder="Enter your email"
+              placeholder="Email"
               value={formData.email}
               onChange={handleChange}
               required
             />
             {errors.email && <div className="invalid-feedback">{errors.email}</div>}
+            <p></p>
           </div>
 
           <div className="form-group">
@@ -87,12 +88,13 @@ return (
               className={`form-control ${errors.password ? 'is-invalid' : ''}`}
               id="password"
               name="password"
-              placeholder="Enter your password"
+              placeholder="Password"
               value={formData.password}
               onChange={handleChange}
               required
             />
             {errors.password && <div className="invalid-feedback">{errors.password}</div>}
+            
           </div>
 
           <button type="submit" className="btn btn-danger btn-block mt-3">Login</button>
