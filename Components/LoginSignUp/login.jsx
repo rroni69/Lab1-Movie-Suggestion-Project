@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./SignUp.css"; 
 import logo from './starwatch.png';
+import { Link } from "react-router-dom"; 
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -94,9 +95,9 @@ return (
               required
             />
             {errors.password && <div className="invalid-feedback">{errors.password}</div>}
-            
-          </div>
 
+            <p className='accountg'>Don't have an account? <Link to="/SignUp">Sign up now!</Link></p>
+          </div>
           <button type="submit" className="btn btn-danger btn-block mt-3">Login</button>
         </form>
       </div>

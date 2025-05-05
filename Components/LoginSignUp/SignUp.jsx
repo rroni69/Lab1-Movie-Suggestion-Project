@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./SignUp.css";
 import logo from './starwatch.png';
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -120,7 +121,7 @@ const SignUp = () => {
                 required
               />
               {errors.password && <div className="invalid-feedback">{errors.password}</div>}
-              
+              <p className='accountg'>Already have an account? <Link to="/login">Login!</Link></p>
 
             </div>
 
